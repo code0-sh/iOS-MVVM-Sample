@@ -10,5 +10,5 @@ protocol GreetingViewModelProtocol: class {
     var greeting: String? { get }
     var greetingDidChange: ((GreetingViewModelProtocol) -> ())? { get set }
     init(person: Person)
-    func showGreeting()
+    func updateGreeting()
 }

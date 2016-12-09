@@ -19,7 +19,7 @@ class GreetingViewModel : GreetingViewModelProtocol {
     required init(person: Person) {
         self.person = person
     }
-    @objc func showGreeting() {
+    @objc func updateGreeting() {
         self.greeting = "Hello" + " " + self.person.firstName + " " + self.person.lastName
     }
 }
