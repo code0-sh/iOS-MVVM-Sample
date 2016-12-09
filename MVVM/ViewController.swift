@@ -8,34 +8,6 @@
 
 import UIKit
 
-struct Person { // Model
-    let firstName: String
-    let lastName: String
-}
-
-protocol GreetingViewModelProtocol: class {
-    var greeting: String? { get }
-    var greetingDidChange: ((GreetingViewModelProtocol) -> ())? { get set } // function to call when greeting did change
-    init(person: Person)
-    func showGreeting()
-}
-
-class GreetingViewModel : GreetingViewModelProtocol {
-    let person: Person
-    var greeting: String? {
-        didSet {
-            self.greetingDidChange?(self)
-        }
-    }
-    var greetingDidChange: ((GreetingViewModelProtocol) -> ())?
-    required init(person: Person) {
-        self.person = person
-    }
-    @objc func showGreeting() {
-        self.greeting = "Hello" + " " + self.person.firstName + " " + self.person.lastName
-    }
-}
-
 class GreetingViewController : UIViewController {
     let showGreetingButton = UIButton()
     let greetingLabel = UILabel()
@@ -68,5 +40,4 @@ class GreetingViewController : UIViewController {
         self.view.addSubview(showGreetingButton)
         self.view.addSubview(greetingLabel)
     }
-    // layout code goes here
 }

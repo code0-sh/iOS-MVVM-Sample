@@ -13,6 +13,9 @@
 		13F4FF731DFA755D00C0EC92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13F4FF721DFA755D00C0EC92 /* Assets.xcassets */; };
 		13F4FF761DFA755D00C0EC92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13F4FF741DFA755D00C0EC92 /* LaunchScreen.storyboard */; };
 		13F4FF811DFA755E00C0EC92 /* MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4FF801DFA755E00C0EC92 /* MVVMTests.swift */; };
+		13F4FF8D1DFA7CBA00C0EC92 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4FF8C1DFA7CBA00C0EC92 /* Person.swift */; };
+		13F4FF901DFA7D2A00C0EC92 /* GreetingViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4FF8F1DFA7D2A00C0EC92 /* GreetingViewModelProtocol.swift */; };
+		13F4FF931DFA7D7A00C0EC92 /* GreetingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F4FF921DFA7D7A00C0EC92 /* GreetingViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		13F4FF7C1DFA755D00C0EC92 /* MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		13F4FF801DFA755E00C0EC92 /* MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTests.swift; sourceTree = "<group>"; };
 		13F4FF821DFA755F00C0EC92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13F4FF8C1DFA7CBA00C0EC92 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		13F4FF8F1DFA7D2A00C0EC92 /* GreetingViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingViewModelProtocol.swift; sourceTree = "<group>"; };
+		13F4FF921DFA7D7A00C0EC92 /* GreetingViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GreetingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +83,9 @@
 		13F4FF6A1DFA755D00C0EC92 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
+				13F4FF911DFA7D6900C0EC92 /* ViewModel */,
+				13F4FF8E1DFA7D1500C0EC92 /* Protocol */,
+				13F4FF8B1DFA7CA100C0EC92 /* Model */,
 				13F4FF6B1DFA755D00C0EC92 /* AppDelegate.swift */,
 				13F4FF6D1DFA755D00C0EC92 /* ViewController.swift */,
 				13F4FF6F1DFA755D00C0EC92 /* Main.storyboard */,
@@ -94,6 +103,30 @@
 				13F4FF821DFA755F00C0EC92 /* Info.plist */,
 			);
 			path = MVVMTests;
+			sourceTree = "<group>";
+		};
+		13F4FF8B1DFA7CA100C0EC92 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				13F4FF8C1DFA7CBA00C0EC92 /* Person.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		13F4FF8E1DFA7D1500C0EC92 /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				13F4FF8F1DFA7D2A00C0EC92 /* GreetingViewModelProtocol.swift */,
+			);
+			name = Protocol;
+			sourceTree = "<group>";
+		};
+		13F4FF911DFA7D6900C0EC92 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				13F4FF921DFA7D7A00C0EC92 /* GreetingViewModel.swift */,
+			);
+			name = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +232,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13F4FF8D1DFA7CBA00C0EC92 /* Person.swift in Sources */,
+				13F4FF901DFA7D2A00C0EC92 /* GreetingViewModelProtocol.swift in Sources */,
+				13F4FF931DFA7D7A00C0EC92 /* GreetingViewModel.swift in Sources */,
 				13F4FF6E1DFA755D00C0EC92 /* ViewController.swift in Sources */,
 				13F4FF6C1DFA755D00C0EC92 /* AppDelegate.swift in Sources */,
 			);
